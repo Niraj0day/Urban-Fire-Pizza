@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pizza Restaurant Online Ordering System</title>
+        <meta name="keywords" content="" />
+		<meta name="description" content="" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!--<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">-->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="js/colorbox/colorbox.css"  rel="stylesheet" type="text/css">
+        <link href="css/pizzatemplate_style.css"  rel="stylesheet" type="text/css">
+		<link href="css/ufp_product_style.css"  rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="pizzatemplate-top-menu">
+            <div class="container">
+                <!-- Static navbar -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                <a href="index.html" class="navbar-brand"><img src="logo/urban-fire-pizza-logo.jpg" alt="Urban Fire Pizza" title="Urban Fire Pizza" /></a>
+                        </div>
+                        <div class="navbar-collapse collapse" id="pizzatemplate-nav-bar">
+                            <ul class="nav navbar-nav navbar-right" style="margin-top: 40px;">
+                                <li class="active"><a href="index.html">HOME</a></li>
+                                <li><a href="#pizzatemplate-welcome">ORDER</a></li>
+                                <li><a href="#pizzatemplate-contact">CONTACT</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div><!--/.container-fluid -->
+                </div><!--/.navbar -->
+            </div> <!-- /container -->
+        </div>
+        
+        <div>
+            <!-- Carousel -->
+            <!--<div id="pizzatemplate-carousel" class="carousel slide" data-ride="carousel">
+            </div>-->
+        </div>
+
+        <div class="pizzatemplate-welcome" id="pizzatemplate-welcome">
+            <div class="container">
+                <div class="pizzatemplate-slogan text-center">
+                    <span class="txt_darkgrey">Welcome to </span><span class="txt_orange">Urban Fire Pizza</span>
+                    <p class="txt_slogan"><i>Choose your one of our world famous pizzas or build your own.</i></p>
+                </div>	
+            </div>
+        </div>
+        <!-- Pizza Products -->
+        <div class="pizzatemplate-service">
+<!-- Pizza Options -->
+<div class="ufp-category-header">Pizzas</div> 
+<div class="ufp-product-row">
+<div class="ufp-product-column ufp-product" id="ufp-product-1">
+	<div class="image-container">
+		<img src="images/optimized/pizzas/pepporoni-pizza.jpg" alt="Pepperoni Pizza"  height="400" width="400">
+		<span class="product-name">Pepperoni Pizza</span>
+	</div>
+    <div class="productcheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+<div class="ufp-product-column ufp-product" id="ufp-product-2">
+	<div class="image-container">
+		<img src="images/optimized/pizzas/margherita-pizza.jpg" alt="Margherita Pizza"  height="400" width="400">
+		<span class="product-name">Margherita Pizza</span>
+	</div>
+    <div class="productcheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+<div class="ufp-product-column ufp-product" id="ufp-product-3">
+	<div class="image-container">
+		<img src="images/optimized/pizzas/artichoke-pizza.jpg" alt="Artichoke Pizza"  height="400" width="400">
+		<span class="product-name">Artichoke Pizza</span>
+	</div>
+    <div class="productcheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+<div class="ufp-product-column ufp-product" id="ufp-product-4">
+	<div class="image-container">
+		<img src="images/optimized/pizzas/meat-lovers-pizza.jpg" alt="Meat Lover's Pizza"  height="400" width="400">
+		<span class="product-name">Meat Lover's Pizza</span>
+	</div>
+    <div class="productcheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+<div class="ufp-product-column ufp-product" id="ufp-product-5">
+	<div class="image-container">
+		<img src="images/optimized/pizzas/vegetarian-pizza.jpg" alt="Vegetarian Pizza"  height="400" width="400">
+		<span class="product-name">Vegetarian Pizza</span>
+	</div>
+    <div class="productcheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+ <div class="ufp-product-column ufp-product" id="ufp-product-6">
+ 	<div class="image-container">
+		<img src="images/optimized/pizzas/build-your-own-pizza.jpg" alt="Build Your Own Pizza"  height="400" width="400">
+		<span class="product-name">Build<br>Your Own<br>Pizza</span>
+	</div>
+    <div class="productcheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+</div>
+<!-- Crust -->
+<div class="ufp-category-header">Crusts</div> 
+<div class="ufp-addon-row">
+  <div class="ufp-addon-column ufp-addon" id="ufp-crust-1">
+	<div class="image-container">
+		<img src="images/optimized/crusts/thin-crust.jpg" alt="Deep Dish Crust">
+		<span class="addon-name">Thin</span>
+	</div>
+	<div class="crustaddoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-crust-2">
+	<div class="image-container">
+		<img src="images/optimized/crusts/hand-tossed-crust.jpg" alt="Hand Tossed Crust">
+		<span class="addon-name">Hand Tossed</span>
+	</div>
+    <div class="crustaddoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-crust-3">
+  	<div class="image-container">
+		<img src="images/optimized/crusts/deep-dish-crust.jpg" alt="Deep Dish Crust">
+		<span class="addon-name">Deep Dish</span>
+	</div>
+    <div class="crustaddoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+</div>
+<!-- Sauces -->
+<div class="ufp-category-header">Sauces</div> 
+<div class="ufp-addon-row">
+  <div class="ufp-addon-column ufp-addon" id="ufp-sauce-4">
+	<div class="image-container">
+		<img src="images/optimized/sauces/alfredo-sauce.jpg" alt="Alfredo Sauce">
+		<span class="addon-name">Alfredo</span>
+	</div>
+	<div class="sauceaddoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-sauce-5">
+	<div class="image-container">
+		<img src="images/optimized/sauces/bbq-sauce.jpg" alt="Barbecue Sauce">
+		<span class="addon-name">Barbecue</span>
+	</div>
+    <div class="sauceaddoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-sauce-6">
+  	<div class="image-container">
+		<img src="images/optimized/sauces/pizza-sauce.jpg" alt="Traditional Sauce" height="500" width="500">
+		<span class="addon-name">Traditional</span>
+	</div>
+    <div class="sauceaddoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+</div>
+<!-- Cheese -->
+<div class="ufp-category-header">Cheeses</div> 
+<div class="ufp-addon-row">
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-7">
+	<div class="image-container">
+		<img src="images/optimized/cheeses/cheddar-cheese.jpg" alt="Cheddar Cheese">
+		<span class="addon-name">Cheddar</span>
+	</div>
+	<div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-8">
+	<div class="image-container">
+		<img src="images/optimized/cheeses/mozzarella-cheese.jpg" alt="Mozzarella Cheese" height="500" width="500">
+		<span class="addon-name">Mozzarella</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-9">
+  	<div class="image-container">
+		<img src="images/optimized/cheeses/parmesan-cheese.jpg" alt="Parmesan Cheese">
+		<span class="addon-name">Parmesan</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+</div>
+<!-- meats -->
+<div class="ufp-category-header">Meats</div> 
+<div class="ufp-addon-row">
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-10">
+	<div class="image-container">
+		<img src="images/optimized/meats/pepperoni.jpg" alt="Pepperoni" height="400" width="400">
+		<span class="addon-name">Pepperoni</span>
+	</div>
+	<div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-11">
+	<div class="image-container">
+		<img src="images/optimized/meats/chicken.jpg" alt="Chicken">
+		<span class="addon-name">Chicken</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-12">
+  	<div class="image-container">
+		<img src="images/optimized/meats/ham.jpg" alt="Ham">
+		<span class="addon-name">Ham</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-13">
+    <div class="image-container">
+		<img src="images/optimized/meats/hamburger.jpg" alt="Hamburger">
+		<span class="addon-name">Hamburger</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-14">
+    <div class="image-container">
+		<img src="images/optimized/meats/italian-sausage.jpg" alt="Italian Sausage">
+		<span class="addon-name">Italian Sausage</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-15">
+   	<div class="image-container">
+		<img src="images/optimized/meats/bacon.jpg" alt="Bacon">
+		<span class="addon-name">Bacon</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+</div>
+<!-- Other -->
+<div class="ufp-category-header">Ingredients</div> 
+<div class="ufp-addon-row">
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-16">
+	<div class="image-container">
+		<img src="images/optimized/other/artichoke.jpg" alt="Artichoke" height="500" width="500">
+		<span class="addon-name">Artichoke</span>
+	</div>
+	<div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-17">
+	<div class="image-container">
+		<img src="images/optimized/other/bell-peppers.jpg" alt="Bell Peppers">
+		<span class="addon-name">Bell Peppers</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-18">
+  	<div class="image-container">
+		<img src="images/optimized/other/black-olives.jpg" alt="Black Olives">
+		<span class="addon-name">Black Olives</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-19">
+  	<div class="image-container">
+		<img src="images/optimized/other/mushroom.jpg" alt="Mushrooms">
+		<span class="addon-name">Mushrooms</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-20">
+  	<div class="image-container">
+		<img src="images/optimized/other/onions.jpg" alt="Onions">
+		<span class="addon-name">Onions</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-21">
+  	<div class="image-container">
+		<img src="images/optimized/other/pineapple.jpg" alt="Pineapple">
+		<span class="addon-name">Pineapple</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-22">
+  	<div class="image-container">
+		<img src="images/optimized/other/spinach.jpg" alt="Spinach">
+		<span class="addon-name">Spinach</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+  <div class="ufp-addon-column ufp-addon" id="ufp-addon-23">
+  	<div class="image-container">
+		<img src="images/optimized/other/tomatoes.jpg" alt="Tomatoes">
+		<span class="addon-name">Tomatoes</span>
+	</div>
+    <div class="addoncheck">
+        <i class="material-icons" style="font-size:48px;color:red">check_circle</i>
+    </div>
+  </div>
+</div>
+
+        </div>
+
+        <div id="pizzatemplate-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="pizzatemplate-line-header head_contact">
+                        <div class="text-center">
+                            <hr class="team_hr team_hr_left hr_gray"/><span class="txt_darkgrey">CONTACT US</span>
+                            <hr class="team_hr team_hr_right hr_gray"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="pizzatemplate-contact-map" id="map-canvas"> </div>  
+                        <div class="clearfix"></div>
+                        <i>You can find us on 2020 Urban Street, Anywhere, USA</i>
+                    </div>
+                    <div class="col-md-4 contact_right">
+                        <p>Contact Urban Fire Pizza with any comments or concerns you may have and we will contact you within 48 hours.</p>
+                        <p><img src="images/location.png" alt="icon 1" /> Urban Fire Pizza, 2020 Urban Street, Anywhere, USA</p>
+                        <p><img src="images/phone1.png"  alt="icon 2" /> 888-555-4455</p>
+                        <p><img src="images/globe.png" alt="icon 3" /><a class="link_orange" href="#"><span class="txt_orange">www.urbanfirepizza.com</span></a></p>
+                        <form class="form-horizontal" action="#">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Name..." maxlength="40" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email..." maxlength="40" />
+                            </div>
+                            <div class="form-group">
+                                <textarea  class="form-control" style="height: 130px;" placeholder="Write down your message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-orange pull-right">SEND</button>
+                        </form>
+                        	
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /#pizzatemplate-contact -->
+
+
+        <div class="pizzatemplate-tweets">
+            <div class="container">
+                <div class="row" style="margin-top:20px;">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-1">
+                                <img src="images/quote.png" alt="icon" />
+                        </div>
+                        <div class="col-md-7 tweet_txt" >
+                                <span>The best pizza we ever had! The pizza was so delicious and with so many flavor could choose that we even visited the pizza shop twice in the same day! You could just take away or standing finish your pizza in the store.</span>
+                                <br/>
+                                <span class="twitter_user">Samantha, USA</span>
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                 </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div>
+
+        <div class="pizzatemplate-footer" >
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+
+                        <div class="footer_container">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#">
+                                        <span class="social-icon-fb"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="social-icon-rss"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="social-icon-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="social-icon-linkedin"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="social-icon-dribbble"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="height30"></div>
+                            <a class="btn btn-lg btn-orange" href="#navbar-brand" role="button" id="btn-back-to-top">Back To Top</a>
+                            <div class="height30"></div>
+                        </div>
+                        <div class="footer_bottom_content">
+                   			<span id="footer-line">Copyright © 2023 <a href="#">Urban Fire Pizza</a>
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js"  type="text/javascript"></script>
+        <script src="js/stickUp.min.js"  type="text/javascript"></script>
+        <script src="js/colorbox/jquery.colorbox-min.js"  type="text/javascript"></script>
+        <script src="js/pizzatemplate_script.js"  type="text/javascript"></script>
+        <script src="js/upc_products_script.js"  type="text/javascript"></script>
+    </body>
+</html>
